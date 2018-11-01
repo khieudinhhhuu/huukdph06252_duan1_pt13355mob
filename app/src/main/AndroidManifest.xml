@@ -2,6 +2,11 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.khieuthichien.hoctiengtrung">
 
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="15" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -9,13 +14,129 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+
+        <activity
+            android:name="com.khieuthichien.hoctienganh.manghinhchao"
+            android:label="@string/title_activity_main"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+            android:screenOrientation="portrait"
+            >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+
+
+
+
+        <activity
+            android:name="com.khieuthichien.hoctienganh.MainActivity"
+            android:label="@string/title_activity_main"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+            android:screenOrientation="portrait"
+            >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+
+        <activity
+            android:name="com.khieuthichien.hoctienganh.gioithieu"
+            android:label="@string/title_activity_main"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+            android:screenOrientation="portrait"
+            android:launchMode="singleTask"
+            >   </activity>
+
+        <activity
+            android:name="com.khieuthichien.hoctienganh.hocnghe"
+            android:label="@string/title_activity_main"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+            android:screenOrientation="portrait"
+            android:launchMode="singleTask"
+            >   </activity>
+
+        <activity
+            android:name="com.khieuthichien.hoctienganh.elearning"
+            android:label="@string/title_activity_main"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+            android:screenOrientation="portrait"
+            android:launchMode="singleTask"
+            >   </activity>
+
+        <activity
+            android:name="com.khieuthichien.hoctienganh.tacgia"
+            android:label="@string/title_activity_main"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+            android:screenOrientation="portrait"
+            android:launchMode="singleTask"
+            >   </activity>
+
+        <activity
+            android:name="com.khieuthichien.hoctienganh.xemvideo"
+            android:label="@string/title_activity_main"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+            android:screenOrientation="portrait"
+            android:launchMode="singleTask"
+            >   </activity>
+
+        <activity
+            android:name="com.khieuthichien.hoctienganh.playvideo"
+            android:label="@string/title_activity_main"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+            android:screenOrientation="portrait"
+            android:launchMode="singleTask"
+            >   </activity>
+
+
+        <activity android:name="com.khieuthichien.hoctienganh.Nhap_congviecActivity"
+            ></activity>
+
+        <activity android:name="com.khieuthichien.hoctienganh.Sua_congviecActivity"
+            ></activity>
+
+
+        <activity android:name="com.khieuthichien.hoctienganh.Ghinho_congviecActivity"
+            android:label="@string/title_activity_main"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+            android:screenOrientation="portrait"
+
+            ></activity>
+
+        <activity android:name="com.khieuthichien.hoctienganh.vanpham"
+            android:label="@string/title_activity_main"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+            android:screenOrientation="portrait"
+
+            ></activity>
+        <activity android:name="com.khieuthichien.hoctienganh.infovanpham"
+            android:label="@string/title_activity_main"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+            android:screenOrientation="portrait"
+
+            ></activity>
+
+        <activity android:name="com.khieuthichien.hoctienganh.tudien"
+            android:label="@string/title_activity_main"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+            android:screenOrientation="portrait"
+
+            ></activity>
+
+        <activity android:name="com.khieuthichien.hoctienganh.infotracuu"
+            android:label="@string/title_activity_main"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+            android:screenOrientation="portrait"
+
+            ></activity>
+
     </application>
+
 
 </manifest>

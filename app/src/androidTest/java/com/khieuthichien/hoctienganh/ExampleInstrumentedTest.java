@@ -1,4 +1,4 @@
-package com.khieuthichien.hoctiengtrung;
+package com.khieuthichien.hoctienganh;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;
